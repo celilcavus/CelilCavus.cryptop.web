@@ -1,0 +1,173 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+@model Home
+
+<!-- end header section -->
+<!-- slider section -->
+<section class=" slider_section position-relative" >
+    <div id="carouselExampleIndicators" class="carousel slide bg-dark" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container">
+                    <div class="box">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <div class="detail-box">
+                                    <div class="">
+                                        <h1>
+                                            @Model.Title
+                                        </h1>
+                                        <h2>
+                                           @Model.SubTitle
+                                        </h2>
+                                        <div class="">
+                                            <a href="">
+                                                Get Started
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-5">
+                                <div class="img-box">
+                                    <img src="~/Content/images/slider-img.png" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end slider section -->
+  
+<!-- how section -->
+<section class="how_section layout_padding">
+    <div class="heading_container">
+        <h2>
+            How It works ?
+        </h2>
+    </div>
+    <div class="how_container" id="home">
+       @Html.Action("GetPartialHowItsWorks","Home")
+    </div>
+</section>
+<!-- end how section -->
+<!-- about section -->
+<section class="about_section layout_padding-bottom" id="about">
+    @Html.Action("GetPartialAbout", "Home")
+</section>
+
+<!-- end about section -->
+<!-- app section -->
+
+<section class="app_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="detail-box">
+                    <h2>
+                        Our Powerful app to connect it all
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam
+                    </p>
+                    <div class="download_box">
+                        <h5>
+                            Download Now
+                        </h5>
+                        <div class="btn-box">
+                            <a href="">
+                                <img src="~/Content/images/app-store.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="~/Content/images/play-store.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="img-box">
+                    <img src="~/Content/images/slider-img.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end app section -->
+<!-- auto section -->
+
+<section class="auto_section layout_padding" id="how">
+    @Html.Action("GetPartialAutomatic","Home")
+</section>
+<!-- end auto section -->
+<!-- client section -->
+
+<section class="client_section layout_padding-bottom" id="wallet">
+    <div class="container">
+        <div class="heading_container">
+            <h2>
+                Testimonial
+            </h2>
+        </div>
+        <div class="box">
+            <div class="b-1">
+                <div class="client_id">
+                    <div class="img-box">
+                        <img src="~/Content/images/client-1.jpg" alt="">
+                    </div>
+                    <div class="name">
+                        <h5>
+                            Readable
+                        </h5>
+                        <h6>
+                            Content of a page
+                        </h6>
+                    </div>
+                </div>
+            </div>
+            <div class="client_detail">
+                <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem
+                </p>
+            </div>
+        </div>
+        <div class="box">
+            <div class="client_id">
+                <div class="img-box">
+                    <img src="~/Content/images/client-2.jpg" alt="">
+                </div>
+                <div class="name">
+                    <h5>
+                        Readable
+                    </h5>
+                    <h6>
+                        Content of a page
+                    </h6>
+                </div>
+            </div>
+            <div class="client_detail">
+                <p>
+                    It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout. The point of using Lorem
+                </p>
+            </div>
+        </div>
+        <div class="btn-box">
+            <a href="">
+                Read More
+            </a>
+        </div>
+    </div>
+</section>
+<!-- end client section -->
